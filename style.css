@@ -1,85 +1,130 @@
+/* Background and layout */
 body {
-  /* Old browsers */
-  background: #141E30;
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(-45deg, #35577D, #141E30);
   margin: 0;
-  padding: 0;
-}
-
-h1 {
-  color: #FFF !important;
-  font-size: 2em;
-  padding-top: 100px;
-  width: 100%;
-  font-family: Georgia;
-  text-align: center;
-}
-
-h2 {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 100;
-  font-size: 22px;
-  line-height: 24px;
-  padding-bottom: 30px;
-  text-align: left;
-  width: 70%;
-  font-family: Georgia;
-}
-
-p {
-  color: aliceblue;
-  line-height: 1.3em;
-  text-align: left;
-  width: 100%;
-  font-family: Helvetica;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.byline {
-  font-family: Helvetica;
-  color: rgba(255, 255, 255, 0.5);
-  float: left;
-  font-size: 14px;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
-
-.caption {
-  display: block;
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 14px;
-  margin-left: 20px;
-  padding: 10px;
-  position: relative;
-  top: 80%;
-  width: 60%;
-  background-color: white;
-  color: black;
-}
-
-.content {
-  padding: 40px;
-}
-
-.image {
-  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-2/soccer.jpeg');
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background: url('seoul-skyline.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  height: 300px;
+  color: #fff;
+  animation: fadeInBody 1s ease-in;
 }
 
-.writer-img {
-  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
-  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
-  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
-  float: left;
-  width: 50px;
+.flyer {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  animation: slideInFlyer 1.2s ease-out;
 }
 
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 4px #000;
+}
+
+header h2 {
+  font-size: 1.6rem;
+  color: #81d4fa;
+  margin-top: 0.5rem;
+}
+
+.powered {
+  font-style: italic;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+header img {
+  max-height: 200px;
+  margin: 0.5rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+  animation: fadeInSection 1.5s ease;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #80cbc4;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #4db6ac;
+  padding-bottom: 0.3rem;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.5rem;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ul li::before {
+  content: "🌟";
+  position: absolute;
+  left: 0;
+}
+.details ul li::before {
+  content: "😁";
+  position: absolute;
+  left: 0;
+}
+.highlights ul li::before {
+  content: "✌️";
+  position: absolute;
+  left: 0;
+}
+.leaders ul li::before {
+  content: "❤️";
+  position: absolute;
+  left: 0;
+}
+
+ul li:hover {
+  transform: translateX(8px);
+  color: #ffcc80;
+}
+
+/* Links */
+a {
+  color: #ffab91;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff7043;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInFlyer {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInSection {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
