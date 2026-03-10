@@ -68,13 +68,6 @@ a:hover {
 body {
   bbackground: url('seoul-skyline.jpg') no-repeat center center fixed;
 }
-.pokeball {
-  background-image: url('file-pokeball-png-0.png');
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
 
 /* Animations */
 @keyframes fadeInBody {
