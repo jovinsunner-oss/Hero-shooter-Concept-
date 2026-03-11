@@ -65,8 +65,7 @@ a:hover {
   color: #ff7043;
   text-decoration: underline;
 }
-body {
-  bbackground: url('file-pokeball-png-0.png') no-repeat center center fixed;
+
 }
 .image {
   background-size: cover;
