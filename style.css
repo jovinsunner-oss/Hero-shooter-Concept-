@@ -70,8 +70,8 @@ a:hover {
 .image {
   background-size: cover;
   background-position: center;
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
 }
 @keyframes fadeInSection {
   from { opacity: 0; transform: translateY(10px); }
