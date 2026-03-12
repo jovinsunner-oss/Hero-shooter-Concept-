@@ -70,10 +70,6 @@ body, html {
   height: 100%;
   margin: 0; /* Removes default body margin */
 }
-h1{
-  opacity: 1!important;
-}
-
 .container {
   display: flex; /* Activates Flexbox on the parent */
   justify-content: center; /* Centers content horizontally along the main axis */
