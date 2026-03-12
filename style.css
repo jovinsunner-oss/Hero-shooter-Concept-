@@ -76,6 +76,30 @@ a:hover {
   height: 70px;
   width: 70px;
 }
+body, html {
+  height: 100%;
+  margin: 0; /* Removes default body margin */
+}
+h1{
+  opacity: 1!important;
+}
+
+.container {
+  display: flex; /* Activates Flexbox on the parent */
+  justify-content: center; /* Centers content horizontally along the main axis */
+  align-items: center; /* Centers content vertically along the cross axis */
+  height: 100%; /* Ensures the container fills the full height of the viewport */
+}
+
+.centered-element {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
 @keyframes fadeInSection {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
