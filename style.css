@@ -63,8 +63,8 @@ a:hover {
 .image {
   background-size: cover;
   background-position: center;
-  height: 70px !important;
-  width: 70px !important;
+  height: 25px !important;
+  width: 25px !important;
 }
 body, html {
   height: 100%;
