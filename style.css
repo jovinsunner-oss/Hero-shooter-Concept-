@@ -36,8 +36,8 @@ h3 {
 .image {
   background-size: cover;
   background-position: center;
-  height: 25px !important;
-  width: 25px !important;
+  height: 75px;
+  width: 75px;
 }
 body, html {
   height: 100%;
